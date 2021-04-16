@@ -1,11 +1,9 @@
-package com.han.demo.edition.three;
-
-import com.alibaba.fastjson.JSON;
+package com.han.demo.edition.one;
 
 import java.io.*;
 import java.net.Socket;
 
-public class RemotingThreeClient {
+public class RemotingTwoClient {
 
     public static String call(String ip, int port, String message) throws IOException {
         try {
@@ -28,10 +26,10 @@ public class RemotingThreeClient {
     }
 
 
-    public static void main(String[] args) throws Exception {
-        String call = call("127.0.0.1", 8888, "测试客户端和服务器通信，服务器接收到消息返回到客户端\n");
+    public static void main(String[] args) throws IOException {
+        String call = call("127.0.0.1", 8888, "测试客户端和服务器通信，服务器接收到消息返回到客户端");
+        call("127.0.0.1", 8888, "\n");
         System.out.println(call);
     }
-
 
 }

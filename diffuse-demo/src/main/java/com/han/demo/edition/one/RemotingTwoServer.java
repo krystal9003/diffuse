@@ -4,7 +4,7 @@ import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-public class RemotingOneServer {
+public class RemotingTwoServer {
 
     public static void main(String[] args) {
         try {
