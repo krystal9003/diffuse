@@ -27,8 +27,7 @@ public class RemotingTwoClient {
 
 
     public static void main(String[] args) throws IOException {
-        String call = call("127.0.0.1", 8888, "测试客户端和服务器通信，服务器接收到消息返回到客户端");
-        call("127.0.0.1", 8888, "\n");
+        String call = call("127.0.0.1", 8888, "测试客户端和服务器通信，服务器接收到消息返回到客户端\n");
         System.out.println(call);
     }
 
